@@ -24,4 +24,19 @@ public class PlayerController : MonoBehaviour
             RestartLevel();
         }
     }
+
+    // Static variable to keep track of the total number of players
+    public static int TotalPlayers = 0;
+
+    private void Awake()
+    {
+        // Increment the total number of players when a new player is created
+        TotalPlayers++;
+    }
+
+    private void OnDestroy()
+    {
+        // Decrement the total number of players when a player is destroyed
+        TotalPlayers--;
+    }
 }
