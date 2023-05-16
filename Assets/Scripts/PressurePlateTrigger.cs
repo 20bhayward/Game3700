@@ -6,9 +6,21 @@ public class PressurePlateTrigger : MonoBehaviour
     public List<GameObject> objectsToHide; // List of objects to hide
     public List<GameObject> objectsToShow; // List of objects to show
 
+    // New material variables
+    public Material activeMaterial;
+    public Material inactiveMaterial;
+
+    private MeshRenderer meshRenderer;
+
+    private void Start()
+    {
+        // Get the MeshRenderer component
+        meshRenderer = GetComponent<MeshRenderer>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Object")
         {
             foreach (GameObject obj in objectsToHide)
             {
@@ -42,12 +54,15 @@ public class PressurePlateTrigger : MonoBehaviour
                     }
                 }
             }
+
+            // Change the material to the active material
+            meshRenderer.material = activeMaterial;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Object")
         {
             foreach (GameObject obj in objectsToHide)
             {
@@ -82,5 +97,8 @@ public class PressurePlateTrigger : MonoBehaviour
                 }
             }
         }
+
+        // Change the material to the active material
+        meshRenderer.material = inactiveMaterial;
     }
 }
