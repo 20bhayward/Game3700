@@ -3982,6 +3982,14 @@ PrefabInstance:
       propertyPath: objectsToHide.Array.data[0]
       value: 
       objectReference: {fileID: 1974539182}
+    - target: {fileID: 5707635059967739761, guid: e9dd8bd163e6be64db43898044b5a9ed, type: 3}
+      propertyPath: objectsToDeactivate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707635059967739761, guid: e9dd8bd163e6be64db43898044b5a9ed, type: 3}
+      propertyPath: objectsToDeactivate.Array.data[0]
+      value: 
+      objectReference: {fileID: 1974539182}
     - target: {fileID: 8238170473480253223, guid: e9dd8bd163e6be64db43898044b5a9ed, type: 3}
       propertyPath: m_RootOrder
       value: 3
