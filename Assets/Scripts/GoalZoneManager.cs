@@ -14,6 +14,8 @@ public class GoalZoneManager : MonoBehaviour
     // Variable to keep track of the number of players in any goal zone
     private int playersInGoalZones = 0;
 
+    public GameObject VictoryScene;
+
     private void Awake()
     {
         if (Instance == null)
@@ -25,6 +27,11 @@ public class GoalZoneManager : MonoBehaviour
             Debug.LogError("There should only be one GoalZoneManager in the scene!");
             Destroy(gameObject);
         }
+    }
+
+    public void VictoryScreen()
+    {
+        VictoryScene.SetActive(true);
     }
 
     public void PlayerEnteredGoalZone()
@@ -39,8 +46,10 @@ public class GoalZoneManager : MonoBehaviour
             // Play the LevelComplete animation
             animator.Play("LevelComplete");
 
+
             // Show the victory screen
-            // victoryScreen.SetActive(true);
+            //VictoryScene.SetActive(true);
+            Invoke("VictoryScreen", 1);
         }
     }
 

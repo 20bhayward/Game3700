@@ -3,11 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+
+    public GameObject Settings;
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
             RestartLevel();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            OpenSettings();
         }
     }
 
@@ -15,6 +22,11 @@ public class PlayerController : MonoBehaviour
     {
         // Reload the current scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void OpenSettings()
+    {
+        Settings.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

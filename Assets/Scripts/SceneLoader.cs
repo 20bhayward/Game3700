@@ -14,11 +14,11 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadTutorial()
     {
-        SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void LoadLevel()
-    {
-        SceneManager.LoadScene("level");
+    { 
+        SceneManager.LoadScene(level);
     }
 }
