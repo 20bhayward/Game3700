@@ -7,6 +7,13 @@ public class LeverTrigger : MonoBehaviour
     public List<GameObject> objectsToActivate;
     public List<GameObject> objectsToDeactivate;
 
+
+    // New material variables
+    public Material activeMaterial;
+    public Material inactiveMaterial;
+
+    public List<MeshRenderer> meshRenderer;
+
     // A flag to check if the lever has been triggered or not
     private bool isTriggered = false;
 
@@ -34,6 +41,12 @@ public class LeverTrigger : MonoBehaviour
 
             // Set the flag to true to prevent further triggering
             isTriggered = true;
+
+            foreach (MeshRenderer obj in meshRenderer)
+            {
+                // Change the material to the active material
+                obj.material = activeMaterial;
+            }
         }
     }
 }

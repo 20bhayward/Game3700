@@ -10,13 +10,7 @@ public class PressurePlateTrigger : MonoBehaviour
     public Material activeMaterial;
     public Material inactiveMaterial;
 
-    private MeshRenderer meshRenderer;
-
-    private void Start()
-    {
-        // Get the MeshRenderer component
-        meshRenderer = GetComponent<MeshRenderer>();
-    }
+    public MeshRenderer meshRenderer;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
