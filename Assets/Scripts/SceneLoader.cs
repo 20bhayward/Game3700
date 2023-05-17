@@ -17,6 +17,16 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("Tutorial");
     }
 
+    public void LoadAllLevels()
+    {
+        SceneManager.LoadScene("AllLevels");
+    }
+
+    public void LoadBlockScene()
+    {
+        SceneManager.LoadScene("BlockScene");
+    }
+
     public void LoadLevel()
     { 
         SceneManager.LoadScene(level);
