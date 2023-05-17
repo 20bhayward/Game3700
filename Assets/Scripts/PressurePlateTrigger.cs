@@ -36,7 +36,6 @@ public class PressurePlateTrigger : MonoBehaviour
                     {
                         coll.enabled = false;
                     }
-                    obj.GetComponent<Collider2D>().enabled = false;
                 }
             }
             foreach (GameObject obj in objectsToShow)
@@ -54,7 +53,6 @@ public class PressurePlateTrigger : MonoBehaviour
                         coll.enabled = true;
                     }
                 }
-                obj.GetComponent<Collider2D>().enabled = true;
             }
 
             // Change the material to the active material
@@ -81,7 +79,6 @@ public class PressurePlateTrigger : MonoBehaviour
                         coll.enabled = true;
                     }
                 }
-                obj.GetComponent<Collider2D>().enabled = false;
             }
             foreach (GameObject obj in objectsToShow)
             {
@@ -98,11 +95,10 @@ public class PressurePlateTrigger : MonoBehaviour
                         coll.enabled = false;
                     }
                 }
-                obj.GetComponent<Collider2D>().enabled = true;
             }
-        }
 
-        // Change the material to the active material
-        meshRenderer.material = inactiveMaterial;
+            // Change the material to the inactive material
+            meshRenderer.material = inactiveMaterial;
+        }
     }
 }

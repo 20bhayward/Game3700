@@ -2503,5 +2503,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Settings
       objectReference: {fileID: 0}
+    - target: {fileID: 6868258920012681482, guid: 24f0e09fb1fe90c448faf58744d04628, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -550.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24f0e09fb1fe90c448faf58744d04628, type: 3}
