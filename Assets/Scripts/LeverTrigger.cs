@@ -14,8 +14,17 @@ public class LeverTrigger : MonoBehaviour
 
     public List<MeshRenderer> meshRenderer;
 
+    public AudioClip startSound; // Sound to play
+
+    private AudioSource audioSource;
+
     // A flag to check if the lever has been triggered or not
     private bool isTriggered = false;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -46,6 +55,12 @@ public class LeverTrigger : MonoBehaviour
             {
                 // Change the material to the active material
                 obj.material = activeMaterial;
+            }
+
+            // Play the end sound
+            if (startSound != null)
+            {
+                audioSource.PlayOneShot(startSound);
             }
         }
     }

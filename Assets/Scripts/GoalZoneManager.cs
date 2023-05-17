@@ -5,8 +5,7 @@ public class GoalZoneManager : MonoBehaviour
     // Singleton instance
     public static GoalZoneManager Instance { get; private set; }
 
-    // Reference to the Animator of the object that will play the animation
-    public Animator animator;
+    public BlockMover blockMover; // Reference to the BlockMover script
 
     // Reference to the victory screen that will be shown
     // public GameObject victoryScreen;
@@ -40,13 +39,7 @@ public class GoalZoneManager : MonoBehaviour
 
         if (playersInGoalZones == PlayerController.TotalPlayers)
         {
-            // Enable the Animator component
-            animator.enabled = true;
-
-            // Play the LevelComplete animation
-            animator.Play("LevelComplete");
-
-
+            blockMover.StartMoving();
             // Show the victory screen
             //VictoryScene.SetActive(true);
             Invoke("VictoryScreen", 1);

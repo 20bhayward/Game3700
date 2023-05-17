@@ -10,7 +10,17 @@ public class PressurePlateTrigger : MonoBehaviour
     public Material activeMaterial;
     public Material inactiveMaterial;
 
+    public AudioClip startSound; // Sound to play when the pressure plate is activated
+    public AudioClip endSound; // Sound to play when the pressure plate is deactivated
+
+
     public MeshRenderer meshRenderer;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -48,7 +58,11 @@ public class PressurePlateTrigger : MonoBehaviour
                     }
                 }
             }
-
+            // Play the start sound
+            if (startSound != null)
+            {
+                audioSource.PlayOneShot(startSound);
+            }
             // Change the material to the active material
             meshRenderer.material = activeMaterial;
         }
@@ -93,6 +107,12 @@ public class PressurePlateTrigger : MonoBehaviour
 
             // Change the material to the inactive material
             meshRenderer.material = inactiveMaterial;
+
+            // Play the end sound
+            if (endSound != null)
+            {
+                audioSource.PlayOneShot(endSound);
+            }
         }
     }
 }
