@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 6.unity
     guid: 676f04c9914d2744f8c91910475bf5e5
+  - enabled: 1
+    path: Assets/Scenes/BlockScene.unity
+    guid: 82dfae3cc29dac648a8e77fe42bfdf7b
   m_configObjects: {}
