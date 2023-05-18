@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public GameObject Settings;
+    public Transform RespawnPoint;
 
     void Update()
     {
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "DeathZone")
         {
-            RestartLevel();
+            transform.position = RespawnPoint.position;
         }
     }
 
