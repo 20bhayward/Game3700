@@ -6938,6 +6938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Settings
       objectReference: {fileID: 0}
+    - target: {fileID: 3050830941105171384, guid: f1df29f381dc8554e94d72374896e1eb, type: 3}
+      propertyPath: level
+      value: Level 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3050830941555674982, guid: f1df29f381dc8554e94d72374896e1eb, type: 3}
       propertyPath: blockMover
       value: 
