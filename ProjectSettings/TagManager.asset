@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DeathZone
   - Object
+  - Powered Trap
   layers:
   - Default
   - TransparentFX

@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f4a4abdaa4af64f8d4f6a461ff923c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windForce: {x: 75, y: 0}
+  windForce: {x: 25, y: 0}
 --- !u!1 &4304391204369726018
 GameObject:
   m_ObjectHideFlags: 0

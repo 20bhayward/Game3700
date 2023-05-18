@@ -17,6 +17,10 @@ public class PressurePlateTrigger : MonoBehaviour
     public MeshRenderer meshRenderer;
     private AudioSource audioSource;
 
+    public List<GameObject> trapsToActivate;
+    public List<GameObject> trapsToDeactivate;
+    private string poweredTrapTag = "Powered Trap";  // The tag for powered traps
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -65,6 +69,15 @@ public class PressurePlateTrigger : MonoBehaviour
             }
             // Change the material to the active material
             meshRenderer.material = activeMaterial;
+
+            // Activate powered traps
+            foreach (GameObject trap in trapsToActivate)
+            {
+                if (trap.CompareTag(poweredTrapTag))
+                {
+                    trap.GetComponent<PistonController>()?.Toggle();
+                }
+            }
         }
     }
 
@@ -113,6 +126,15 @@ public class PressurePlateTrigger : MonoBehaviour
             {
                 audioSource.PlayOneShot(endSound);
             }
+            // Activate powered traps
+            foreach (GameObject trap in trapsToDeactivate)
+            {
+                if (trap.CompareTag(poweredTrapTag))
+                {
+                    trap.GetComponent<PistonController>()?.Toggle();
+                }
+            }
+
         }
     }
 }

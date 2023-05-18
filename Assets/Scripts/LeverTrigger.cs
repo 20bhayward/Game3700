@@ -21,6 +21,10 @@ public class LeverTrigger : MonoBehaviour
     // A flag to check if the lever has been triggered or not
     private bool isTriggered = false;
 
+    public List<GameObject> trapsToActivate;
+    public List<GameObject> trapsToDeactivate;
+    private string poweredTrapTag = "Powered Trap";  // The tag for powered traps
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -61,6 +65,15 @@ public class LeverTrigger : MonoBehaviour
             if (startSound != null)
             {
                 audioSource.PlayOneShot(startSound);
+            }
+
+            // Activate powered traps
+            foreach (GameObject trap in trapsToActivate)
+            {
+                if (trap.CompareTag(poweredTrapTag))
+                {
+                    trap.GetComponent<PistonController>()?.Toggle();
+                }
             }
         }
     }
