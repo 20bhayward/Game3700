@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BlockScene.unity
     guid: 82dfae3cc29dac648a8e77fe42bfdf7b
+  - enabled: 1
+    path: Assets/Scenes/Secret Level 1.unity
+    guid: 4f18e809a4b885e459397025d839350b
   m_configObjects: {}
