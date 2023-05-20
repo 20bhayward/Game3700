@@ -5,8 +5,8 @@ using UnityEngine;
 public class BoatController : MonoBehaviour
 {
     public List<Transform> waypoints; // List of waypoints
+    public List<float> waitTimes; // List of wait times at each waypoint
     public float speed = 1.0f; // Speed of the boat
-    public float waitTime = 2.0f; // Time to wait at each waypoint
 
     private int currentIndex = 0;
     private bool isMoving = true;
@@ -14,6 +14,12 @@ public class BoatController : MonoBehaviour
 
     private void Start()
     {
+        if (waypoints.Count != waitTimes.Count)
+        {
+            Debug.LogError("The number of waypoints and wait times do not match!");
+            return;
+        }
+
         player = GameObject.FindGameObjectWithTag("Player"); // Tag the player object with "Player"
         StartCoroutine(Patrol());
     }
@@ -47,7 +53,7 @@ public class BoatController : MonoBehaviour
                 if (Vector3.Distance(transform.position, waypoints[currentIndex].position) < 0.01f)
                 {
                     isMoving = false;
-                    yield return new WaitForSeconds(waitTime);
+                    yield return new WaitForSeconds(waitTimes[currentIndex]);
                     currentIndex = (currentIndex + 1) % waypoints.Count;
                     isMoving = true;
                 }

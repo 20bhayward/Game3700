@@ -38,6 +38,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "DeathZone")
+        {
+            transform.position = RespawnPoint.position;
+        }
+    }
+
     // Static variable to keep track of the total number of players
     public static int TotalPlayers = 0;
 
