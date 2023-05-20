@@ -44,7 +44,6 @@ public class TNT : MonoBehaviour
                 if (overlap.gameObject.CompareTag("DeathZone"))
                 {
                     Activate();
-                    Activate();
                     break;
                 }
             }
