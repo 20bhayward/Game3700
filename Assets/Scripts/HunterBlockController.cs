@@ -3,50 +3,81 @@ using UnityEngine;
 
 public class HunterBlockController : MonoBehaviour
 {
-    public float speed = 5f;
-
-    private Vector2 startPosition;
-    private Vector2 direction;
-    private float moveDistance;
-    private bool isMoving = false;
+    public float moveSpeed = 5f;
+    private Vector3 startPosition;
+    private Vector3 targetPosition;
+    private Vector2 directionVector;
+    private float pathLength;
+    private Coroutine moveCoroutine;
+    private bool isMoving;
 
     private void Start()
     {
         startPosition = transform.position;
     }
 
-    private void Update()
+    public void MoveInDirection(Vector2 direction, float length)
     {
-        if (isMoving)
-        {
-            float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, startPosition + direction * moveDistance, step);
+        if (isMoving) return;
 
-            if ((Vector2)transform.position == startPosition + direction * moveDistance)
-            {
-                isMoving = false;
-            }
-        }
-        else
+        directionVector = direction;
+        pathLength = length;
+        targetPosition = startPosition + (Vector3)(direction * length);
+
+        if (moveCoroutine != null)
         {
-            transform.position = Vector2.MoveTowards(transform.position, startPosition, speed * Time.deltaTime);
+            StopCoroutine(moveCoroutine);
         }
+
+        moveCoroutine = StartCoroutine(MoveToTarget());
     }
 
-    public void MoveInDirection(Vector2 dir, float distance)
+    public bool IsMoving()
     {
-        direction = dir;
-        moveDistance = distance;
+        return isMoving;
+    }
+
+    private IEnumerator MoveToTarget()
+    {
         isMoving = true;
-    }
 
-    public bool IsAtStartPosition()
-    {
-        return (Vector2)transform.position == startPosition;
-    }
+        while (Vector3.Distance(transform.position, targetPosition) > 0.001f)
+        {
+            float step = moveSpeed * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
+            yield return null;
+        }
 
-    public void ReturnToStartPosition()
-    {
         isMoving = false;
+
+        // Reached the target, return to the start position
+        StartCoroutine(ReturnToStartPosition());
+    }
+
+    private IEnumerator ReturnToStartPosition()
+    {
+        isMoving = true;
+
+        while (Vector3.Distance(transform.position, startPosition) > 0.001f)
+        {
+            float step = moveSpeed * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, startPosition, step);
+            yield return null;
+        }
+
+        isMoving = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!collision.gameObject.CompareTag("Player"))
+        {
+            // If collides with a non-player object, stop current movement and return to the start position
+            if (moveCoroutine != null)
+            {
+                StopCoroutine(moveCoroutine);
+            }
+            StartCoroutine(ReturnToStartPosition());
+        }
     }
 }

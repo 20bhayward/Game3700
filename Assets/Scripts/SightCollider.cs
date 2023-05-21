@@ -27,44 +27,34 @@ public class SightCollider : MonoBehaviour
         {
             case Direction.Up:
                 directionVector = Vector2.up;
-                collider.size = new Vector2(1, sightRange);
-                offset.y = sightRange / 2 + 0.5f;
+                collider.size = new Vector2(collider.size.x, sightRange);
+                offset.y = sightRange / 2;
                 break;
             case Direction.Down:
                 directionVector = Vector2.down;
-                collider.size = new Vector2(1, sightRange);
-                offset.y = -sightRange / 2 - 0.5f;
+                collider.size = new Vector2(collider.size.x, sightRange);
+                offset.y = -sightRange / 2;
                 break;
             case Direction.Left:
                 directionVector = Vector2.left;
-                collider.size = new Vector2(sightRange, 1);
-                offset.x = -sightRange / 2 - 0.5f;
+                collider.size = new Vector2(sightRange, collider.size.y);
+                offset.x = -sightRange / 2;
                 break;
             case Direction.Right:
                 directionVector = Vector2.right;
-                collider.size = new Vector2(sightRange, 1);
-                offset.x = sightRange / 2 + 0.5f;
+                collider.size = new Vector2(sightRange, collider.size.y);
+                offset.x = sightRange / 2;
                 break;
         }
 
         collider.offset = offset;
     }
 
-
-
     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player") && hunterBlockController.IsAtStartPosition())
-        {
-            hunterBlockController.MoveInDirection(directionVector, collider.size.magnitude);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            hunterBlockController.ReturnToStartPosition();
+            hunterBlockController.MoveInDirection(directionVector, collider.size.magnitude);
         }
     }
 }
