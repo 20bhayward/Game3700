@@ -38,7 +38,7 @@ public class TNT : MonoBehaviour
         }
         else
         {
-            Collider2D[] overlaps = Physics2D.OverlapBoxAll(transform.position, boxCollider.size, 0);
+            Collider2D[] overlaps = Physics2D.OverlapBoxAll(transform.position, boxCollider.size/2, 0);
             foreach (Collider2D overlap in overlaps)
             {
                 if (overlap.gameObject.CompareTag("DeathZone"))
