@@ -37,7 +37,11 @@ public class PlayerController : MonoBehaviour
             foreach (GameObject player in players)
             {
                 PlayerController playerController = player.GetComponent<PlayerController>();
-                Vector3 respawnPos = playerController.RespawnPoint.position;
+                Vector3 respawnPos = RespawnPoint.position;
+                if (playerController != null && playerController.RespawnPoint != null && playerController.RespawnPoint.position != null)
+                {
+                    respawnPos = playerController.RespawnPoint.position;
+                }
                 player.transform.position = respawnPos + new Vector3(0.1f, 0.1f, 0);
             }
         }
@@ -51,7 +55,11 @@ public class PlayerController : MonoBehaviour
             foreach (GameObject player in players)
             {
                 PlayerController playerController = player.GetComponent<PlayerController>();
-                Vector3 respawnPos = playerController.RespawnPoint.position;
+                Vector3 respawnPos = RespawnPoint.position;
+                if (playerController != null && playerController.RespawnPoint != null && playerController.RespawnPoint.position != null)
+                {
+                   respawnPos = playerController.RespawnPoint.position;
+                }
                 player.transform.position = respawnPos + new Vector3(0.1f, 0.1f, 0);
             }
         }
