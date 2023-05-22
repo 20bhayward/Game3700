@@ -243,10 +243,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f868945df3c6786429798e498332131a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frameDuration: 1
-  loopDelay: 1
+  frames:
+  - {fileID: 5113417666683806791}
+  - {fileID: 5113417667139141387}
+  - {fileID: 5113417667076052373}
+  - {fileID: 5113417666974183690}
+  - {fileID: 5113417666683806791}
+  timeBetweenFrames: 0.75
   loop: 0
-  collider: {fileID: 5113417667096515724}
+  timeBetweenLoops: 1
 --- !u!61 &5113417667096515724
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -316,7 +321,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.024183273, y: 0.5803871}
