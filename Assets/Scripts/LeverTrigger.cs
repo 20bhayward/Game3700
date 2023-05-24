@@ -41,6 +41,14 @@ public class LeverTrigger : MonoBehaviour
                 {
                     obj.GetComponent<Collider2D>().enabled = true;
                 }
+                if (obj.gameObject.tag == "Physics Powered Object") {
+                    PhysicsBlockController objController = obj.GetComponent<PhysicsBlockController>();
+                    if (objController != null && objController.activatedBySwitch)
+                    {
+                        objController.Activate();
+                    }
+                }
+
             }
 
             foreach (GameObject obj in objectsToDeactivate)

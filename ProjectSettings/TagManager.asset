@@ -7,11 +7,12 @@ TagManager:
   - DeathZone
   - Object
   - Powered Trap
+  - Physics Powered Object
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 

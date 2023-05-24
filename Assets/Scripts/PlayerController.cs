@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-
     public GameObject Settings;
     public Transform RespawnPoint;
 
@@ -34,7 +33,35 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "DeathZone")
         {
-            transform.position = RespawnPoint.position;
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+            foreach (GameObject player in players)
+            {
+                PlayerController playerController = player.GetComponent<PlayerController>();
+                Vector3 respawnPos = RespawnPoint.position;
+                if (playerController != null && playerController.RespawnPoint != null && playerController.RespawnPoint.position != null)
+                {
+                    respawnPos = playerController.RespawnPoint.position;
+                }
+                player.transform.position = respawnPos + new Vector3(0.1f, 0.1f, 0);
+            }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "DeathZone")
+        {
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+            foreach (GameObject player in players)
+            {
+                PlayerController playerController = player.GetComponent<PlayerController>();
+                Vector3 respawnPos = RespawnPoint.position;
+                if (playerController != null && playerController.RespawnPoint != null && playerController.RespawnPoint.position != null)
+                {
+                   respawnPos = playerController.RespawnPoint.position;
+                }
+                player.transform.position = respawnPos + new Vector3(0.1f, 0.1f, 0);
+            }
         }
     }
 
