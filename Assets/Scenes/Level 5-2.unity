@@ -3206,6 +3206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destructible Block (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2151136814959429472, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
+      propertyPath: m_TagString
+      value: Object
+      objectReference: {fileID: 0}
     - target: {fileID: 3420592497883933278, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
       propertyPath: m_RootOrder
       value: 63
@@ -3682,6 +3686,10 @@ PrefabInstance:
     - target: {fileID: 2151136814959429472, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
       propertyPath: m_Name
       value: Destructible Block (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2151136814959429472, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
+      propertyPath: m_TagString
+      value: Object
       objectReference: {fileID: 0}
     - target: {fileID: 3420592497883933278, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
       propertyPath: m_RootOrder
@@ -4408,6 +4416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destructible Block (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2151136814959429472, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
+      propertyPath: m_TagString
+      value: Object
+      objectReference: {fileID: 0}
     - target: {fileID: 3420592497883933278, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
       propertyPath: m_RootOrder
       value: 65
@@ -4879,6 +4891,10 @@ PrefabInstance:
     - target: {fileID: 2151136814959429472, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
       propertyPath: m_Name
       value: Destructible Block (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2151136814959429472, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
+      propertyPath: m_TagString
+      value: Object
       objectReference: {fileID: 0}
     - target: {fileID: 3420592497883933278, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
       propertyPath: m_RootOrder
@@ -5899,6 +5915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destructible Block (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2151136814959429472, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
+      propertyPath: m_TagString
+      value: Object
+      objectReference: {fileID: 0}
     - target: {fileID: 3420592497883933278, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
       propertyPath: m_RootOrder
       value: 64
@@ -6880,6 +6900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sentry Control (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2504322313100827395, guid: e9dd8bd163e6be64db43898044b5a9ed, type: 3}
+      propertyPath: m_TagString
+      value: Object
+      objectReference: {fileID: 0}
     - target: {fileID: 3181943301874259462, guid: e9dd8bd163e6be64db43898044b5a9ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -7029,6 +7053,10 @@ PrefabInstance:
     - target: {fileID: 2151136814959429472, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
       propertyPath: m_Name
       value: Destructible Block (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2151136814959429472, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
+      propertyPath: m_TagString
+      value: Object
       objectReference: {fileID: 0}
     - target: {fileID: 3420592497883933278, guid: ff64b7f8c5d27024ebffa1a2fd46ca25, type: 3}
       propertyPath: m_RootOrder

@@ -899,6 +899,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 377498361}
     m_Modifications:
+    - target: {fileID: 6836073040546093361, guid: da6e7414567204a478a4bec57217f76c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.634181
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836073040546093361, guid: da6e7414567204a478a4bec57217f76c, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.18290949
+      objectReference: {fileID: 0}
     - target: {fileID: 6836073040546093362, guid: da6e7414567204a478a4bec57217f76c, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1303,6 +1311,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 377498361}
     m_Modifications:
+    - target: {fileID: 6836073040546093361, guid: da6e7414567204a478a4bec57217f76c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.71547365
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836073040546093361, guid: da6e7414567204a478a4bec57217f76c, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.14226317
+      objectReference: {fileID: 0}
     - target: {fileID: 6836073040546093362, guid: da6e7414567204a478a4bec57217f76c, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -3217,6 +3233,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 377498361}
     m_Modifications:
+    - target: {fileID: 6836073040546093361, guid: da6e7414567204a478a4bec57217f76c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.77644444
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836073040546093361, guid: da6e7414567204a478a4bec57217f76c, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.11177778
+      objectReference: {fileID: 0}
     - target: {fileID: 6836073040546093362, guid: da6e7414567204a478a4bec57217f76c, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -5404,6 +5428,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 377498361}
     m_Modifications:
+    - target: {fileID: 6836073040546093361, guid: da6e7414567204a478a4bec57217f76c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6545038
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836073040546093361, guid: da6e7414567204a478a4bec57217f76c, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.17274809
+      objectReference: {fileID: 0}
     - target: {fileID: 6836073040546093362, guid: da6e7414567204a478a4bec57217f76c, type: 3}
       propertyPath: m_RootOrder
       value: 9
