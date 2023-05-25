@@ -375,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8287931800321282365, guid: 94851f8e2a4afc843950b7613c7f1af9, type: 3}
       propertyPath: frequency
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8287931800683502680, guid: 94851f8e2a4afc843950b7613c7f1af9, type: 3}
       propertyPath: m_RootOrder
@@ -1950,7 +1950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8287931800321282365, guid: 94851f8e2a4afc843950b7613c7f1af9, type: 3}
       propertyPath: frequency
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8287931800683502680, guid: 94851f8e2a4afc843950b7613c7f1af9, type: 3}
       propertyPath: m_RootOrder
@@ -3247,7 +3247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8287931800321282365, guid: 94851f8e2a4afc843950b7613c7f1af9, type: 3}
       propertyPath: frequency
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8287931800683502680, guid: 94851f8e2a4afc843950b7613c7f1af9, type: 3}
       propertyPath: m_RootOrder
@@ -4722,7 +4722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8287931800321282365, guid: 94851f8e2a4afc843950b7613c7f1af9, type: 3}
       propertyPath: frequency
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8287931800683502680, guid: 94851f8e2a4afc843950b7613c7f1af9, type: 3}
       propertyPath: m_RootOrder
@@ -5844,7 +5844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8287931800321282365, guid: 94851f8e2a4afc843950b7613c7f1af9, type: 3}
       propertyPath: frequency
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8287931800683502680, guid: 94851f8e2a4afc843950b7613c7f1af9, type: 3}
       propertyPath: m_RootOrder
@@ -6102,7 +6102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8287931800321282365, guid: 94851f8e2a4afc843950b7613c7f1af9, type: 3}
       propertyPath: frequency
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8287931800683502680, guid: 94851f8e2a4afc843950b7613c7f1af9, type: 3}
       propertyPath: m_RootOrder
