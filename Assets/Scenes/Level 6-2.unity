@@ -2537,7 +2537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7935141999522038057, guid: e18aa0e12e3a7b146a8363504ff52a81, type: 3}
       propertyPath: explosionRadius
-      value: 2
+      value: 1.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18aa0e12e3a7b146a8363504ff52a81, type: 3}
@@ -7180,7 +7180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7935141999522038057, guid: e18aa0e12e3a7b146a8363504ff52a81, type: 3}
       propertyPath: explosionRadius
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18aa0e12e3a7b146a8363504ff52a81, type: 3}
