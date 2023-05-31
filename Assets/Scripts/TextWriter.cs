@@ -7,7 +7,7 @@ public class TextWriter : MonoBehaviour
 {
     public Text sentenceText;
     public string sentence = "One Two Many";
-    public float typingSpeed = 0.1f;
+    public float typingSpeed = 0.05f;
 
     private void Start()
     {
