@@ -2415,6 +2415,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Push into fan
       objectReference: {fileID: 0}
+    - target: {fileID: 2960677363565029062, guid: e67b680de83c1d14080bdecc0a3b7931, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 367
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960677363565029062, guid: e67b680de83c1d14080bdecc0a3b7931, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 185
+      objectReference: {fileID: 0}
     - target: {fileID: 3257060505974041081, guid: e67b680de83c1d14080bdecc0a3b7931, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2422,6 +2430,10 @@ PrefabInstance:
     - target: {fileID: 5659236345803064933, guid: e67b680de83c1d14080bdecc0a3b7931, type: 3}
       propertyPath: m_Name
       value: Hint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088369834221618897, guid: e67b680de83c1d14080bdecc0a3b7931, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6100289965622661572, guid: e67b680de83c1d14080bdecc0a3b7931, type: 3}
       propertyPath: m_RootOrder
@@ -5296,6 +5308,10 @@ PrefabInstance:
     - target: {fileID: 3050830940762200915, guid: 453c551e4acdea34ab2c329b720edd99, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050830940918140233, guid: 453c551e4acdea34ab2c329b720edd99, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3050830940918140235, guid: 453c551e4acdea34ab2c329b720edd99, type: 3}
       propertyPath: m_Pivot.x

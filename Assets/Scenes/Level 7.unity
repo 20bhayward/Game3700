@@ -1218,6 +1218,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Let the fan guide you
       objectReference: {fileID: 0}
+    - target: {fileID: 2960677363565029062, guid: e67b680de83c1d14080bdecc0a3b7931, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 357
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960677363565029062, guid: e67b680de83c1d14080bdecc0a3b7931, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 191
+      objectReference: {fileID: 0}
     - target: {fileID: 3088322844729989721, guid: e67b680de83c1d14080bdecc0a3b7931, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 17.7
@@ -1233,6 +1241,10 @@ PrefabInstance:
     - target: {fileID: 5659236345803064933, guid: e67b680de83c1d14080bdecc0a3b7931, type: 3}
       propertyPath: m_Name
       value: Hint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088369834221618897, guid: e67b680de83c1d14080bdecc0a3b7931, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6100289965622661572, guid: e67b680de83c1d14080bdecc0a3b7931, type: 3}
       propertyPath: m_RootOrder
@@ -3902,6 +3914,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3050830940918140233, guid: 7052d31e9c6af1640894d95748385a29, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3050830940918140235, guid: 7052d31e9c6af1640894d95748385a29, type: 3}
       propertyPath: m_Pivot.x
       value: 0
