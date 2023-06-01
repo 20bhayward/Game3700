@@ -5222,7 +5222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120a4c978a69fb94a9d671c61cd671c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Secret Level 1
+  sceneToLoad: Level 11
 --- !u!1001 &1864846329
 PrefabInstance:
   m_ObjectHideFlags: 0
