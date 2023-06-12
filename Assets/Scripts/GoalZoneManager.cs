@@ -37,7 +37,7 @@ public class GoalZoneManager : MonoBehaviour
     {
         playersInGoalZones++;
 
-        if (playersInGoalZones == PlayerController.TotalPlayers)
+        if (playersInGoalZones == PlayerController.TotalPlayers || playersInGoalZones == RestartPlayerController.TotalPlayers)
         {
             blockMover.StartMoving();
             // Show the victory screen
