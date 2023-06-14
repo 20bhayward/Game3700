@@ -29,21 +29,27 @@ public class PlayerController : MonoBehaviour
         Settings.SetActive(true);
     }
 
+    public void Respawn()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject player in players)
+        {
+            PlayerController playerController = player.GetComponent<PlayerController>();
+            Vector3 respawnPos = RespawnPoint.position;
+            if (playerController != null && playerController.RespawnPoint != null && playerController.RespawnPoint.position != null)
+            {
+                respawnPos = playerController.RespawnPoint.position;
+            }
+            float randomNumber = UnityEngine.Random.Range(0.0f, 1.0f);
+            player.transform.position = respawnPos + new Vector3(randomNumber, randomNumber, 0);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "DeathZone")
         {
-            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-            foreach (GameObject player in players)
-            {
-                PlayerController playerController = player.GetComponent<PlayerController>();
-                Vector3 respawnPos = RespawnPoint.position;
-                if (playerController != null && playerController.RespawnPoint != null && playerController.RespawnPoint.position != null)
-                {
-                    respawnPos = playerController.RespawnPoint.position;
-                }
-                player.transform.position = respawnPos + new Vector3(0.1f, 0.1f, 0);
-            }
+            Respawn();
         }
     }
 
@@ -51,17 +57,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "DeathZone")
         {
-            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-            foreach (GameObject player in players)
-            {
-                PlayerController playerController = player.GetComponent<PlayerController>();
-                Vector3 respawnPos = RespawnPoint.position;
-                if (playerController != null && playerController.RespawnPoint != null && playerController.RespawnPoint.position != null)
-                {
-                   respawnPos = playerController.RespawnPoint.position;
-                }
-                player.transform.position = respawnPos + new Vector3(0.1f, 0.1f, 0);
-            }
+            Respawn();
         }
     }
 
