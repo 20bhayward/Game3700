@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
             {
                 respawnPos = playerController.RespawnPoint.position;
             }
-            float randomNumber = UnityEngine.Random.Range(0.0f, 1.0f);
+            float randomNumber = UnityEngine.Random.Range(0.0f, 0.1f);
             player.transform.position = respawnPos + new Vector3(randomNumber, randomNumber, 0);
         }
     }
