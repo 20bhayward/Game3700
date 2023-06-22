@@ -4601,9 +4601,33 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 0e5ecf2501670124dbe40cde6a566fd3, type: 3}
+    - target: {fileID: 8708568959266351684, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
+      propertyPath: m_text
+      value: hmm how is the sentry not burning
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708568959266351686, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708568959266351687, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 227.8268
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708568959266351687, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708568959266351687, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -7
+      objectReference: {fileID: 0}
     - target: {fileID: 8708568959441923322, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
       propertyPath: level
       value: Level 6-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708568959757735091, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708568959767349769, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
       propertyPath: m_Pivot.x
@@ -4692,6 +4716,18 @@ PrefabInstance:
     - target: {fileID: 8708568959767349773, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
       propertyPath: m_Name
       value: UpdatedLevelSettings
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708568960945607200, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 202
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708568960945607200, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 102
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708568960945607203, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fc8d965b30d2f44fb07200fac3ee7ba, type: 3}
